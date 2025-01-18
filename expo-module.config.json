@@ -1,0 +1,17 @@
+{
+  "platforms": [
+    "apple",
+    "android",
+    "web"
+  ],
+  "apple": {
+    "modules": [
+      "ExpoSentenceEmbeddingsModule"
+    ]
+  },
+  "android": {
+    "modules": [
+      "expo.modules.sentenceembeddings.ExpoSentenceEmbeddingsModule"
+    ]
+  }
+}
