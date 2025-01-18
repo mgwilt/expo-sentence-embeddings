@@ -32,11 +32,24 @@ Make sure to add the module to your app.json/expo.config.js plugins array:
 
 ### Download Model
 
-Before using the module, you need to download the required model files. Run the provided Python script:
+Before using the module, you need to download the required model files. The process involves setting up a Python virtual environment and running the provided script.
 
+#### Windows
+```powershell
+cd modules/expo-sentence-embeddings/scripts
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python download_model.py
+```
+
+#### macOS/Linux
 ```bash
-cd modules/expo-sentence-embeddings
-python scripts/download_model.py
+cd modules/expo-sentence-embeddings/scripts
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python download_model.py
 ```
 
 This will download the necessary model files and tokenizer to the appropriate locations in the Android ~~and iOS~~ directories.
